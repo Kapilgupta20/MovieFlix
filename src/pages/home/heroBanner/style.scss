@@ -1,3 +1,5 @@
+
+
 @import "../../../mixins.scss";
 
 .heroBanner {
@@ -14,8 +16,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        opacity: 0;
         overflow: hidden;
+        opacity: 0;
         transition: opacity 0.5s ease-in-out;
         background-size: cover;
         object-fit: cover;
@@ -68,9 +70,11 @@
                     position: relative;
                     background-color: white;
                     flex-shrink: 0;
+                    max-width: 50px;
                     @include md {
-                        width: 50px;
-                        height: 50px;
+                        // width: 50px;
+                        // height: 50px;
+                        max-width: 50px;
                     }
                 }
 
@@ -143,6 +147,111 @@
         }
     }
 }
+//     @media (max-width: 768px) {
+//         .content {
+//             bottom: 20px;
+//             left: 20px;
 
+//             .title {
+//                 font-size: 1.8rem;
+//             }
 
+//             .info {
+//                 font-size: 0.9rem;
 
+//                 .circleRating {
+//                     width: 40px;
+//                     height: 40px;
+//                 }
+
+//                 .genres {
+//                     .genre {
+//                         font-size: 0.8rem;
+//                     }
+//                 }
+//             }
+
+//             .overview {
+//                 font-size: 0.9rem;
+//                 max-width: 100%;
+//             }
+//         }
+
+//         .sliderButton {
+//             width: 30px;
+//             height: 30px;
+
+//             &.prev {
+//                 left: 10px;
+//             }
+
+//             &.next {
+//                 right: 10px;
+//             }
+//         }
+
+//         .dots {
+//             bottom: 10px;
+//             gap: 5px;
+
+//             .dot {
+//                 width: 8px;
+//                 height: 8px;
+//             }
+//         }
+//     }
+
+//     @media (max-width: 480px) {
+//         .content {
+//             bottom: 10px;
+//             left: 10px;
+
+//             .title {
+//                 font-size: 1.5rem;
+//             }
+
+//             .info {
+//                 font-size: 0.8rem;
+
+//                 .circleRating {
+//                     width: 30px;
+//                     height: 30px;
+//                 }
+
+//                 .genres {
+//                     .genre {
+//                         font-size: 0.7rem;
+//                     }
+//                 }
+//             }
+
+//             .overview {
+//                 font-size: 0.8rem;
+//                 max-width: 100%;
+//             }
+//         }
+
+//         .sliderButton {
+//             width: 25px;
+//             height: 25px;
+
+//             &.prev {
+//                 left: 5px;
+//             }
+
+//             &.next {
+//                 right: 5px;
+//             }
+//         }
+
+//         .dots {
+//             bottom: 5px;
+//             gap: 3px;
+
+//             .dot {
+//                 width: 6px;
+//                 height: 6px;
+//             }
+//         }
+//     }
+// }

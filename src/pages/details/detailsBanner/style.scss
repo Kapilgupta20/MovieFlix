@@ -146,40 +146,14 @@
 
                 .text {
                     font-size: 20px;
-                    transition: all 0.7s ease-in-out;
                 }
 
                 .triangle {
-                    stroke-dasharray: 240;
-                    stroke-dashoffset: 480;
                     stroke: white;
-                    transform: translateY(0);
-                    transition: all 0.7s ease-in-out;
                 }
 
                 .circle {
                     stroke: white;
-                    stroke-dasharray: 650;
-                    stroke-dashoffset: 1300;
-                    transition: all 0.5s ease-in-out;
-                }
-
-                &:hover {
-                    // .text {
-                    //     color: var(--dark);
-                    // }
-
-                    .triangle {
-                        stroke-dashoffset: 0;
-                        opacity: 1;
-                        stroke: var(--dark);
-                        animation: trailorPlay 0.7s ease-in-out;
-                    }
-
-                    .circle {
-                        stroke-dashoffset: 0;
-                        stroke: var(--dark);
-                    }
                 }
             }
 
